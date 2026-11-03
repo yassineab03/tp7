@@ -1,0 +1,101 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/C:/Users/ASUS/.m2/wrapper/dists/apache-maven-3.9.5-bin/2adeog8mj13csp1uusqnc1f2mo/apache-maven-3.9.5/lib/jansi-2.4.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/C:/Users/ASUS/.m2/wrapper/dists/apache-maven-3.9.5-bin/2adeog8mj13csp1uusqnc1f2mo/apache-maven-3.9.5/lib/guava-32.0.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+17:05:30.882 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [ma.ws.jaxrs.CompteApiTests]: CompteApiTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:05:31.059 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration ma.ws.jaxrs.JaxrsApplication for test class ma.ws.jaxrs.CompteApiTests
+17:05:31.544 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-11-03T17:05:31.995+01:00  INFO 3524 --- [jaxrs] [           main] ma.ws.jaxrs.CompteApiTests               : Starting CompteApiTests using Java 25.0.4 with PID 3524 (started by ASUS in C:\Users\ASUS\Desktop\emsi2\MICROSERVICES\tp7\jaxrs)
+2026-11-03T17:05:31.998+01:00  INFO 3524 --- [jaxrs] [           main] ma.ws.jaxrs.CompteApiTests               : No active profile set, falling back to 1 default profile: "default"
+2026-11-03T17:05:33.086+01:00  INFO 3524 --- [jaxrs] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-03T17:05:33.175+01:00  INFO 3524 --- [jaxrs] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
+2026-11-03T17:05:34.069+01:00  INFO 3524 --- [jaxrs] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-11-03T17:05:34.098+01:00  INFO 3524 --- [jaxrs] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-03T17:05:34.098+01:00  INFO 3524 --- [jaxrs] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03T17:05:34.245+01:00  INFO 3524 --- [jaxrs] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-03T17:05:34.245+01:00  INFO 3524 --- [jaxrs] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2217 ms
+2026-11-03T17:05:34.848+01:00  INFO 3524 --- [jaxrs] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-03T17:05:34.966+01:00  INFO 3524 --- [jaxrs] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-11-03T17:05:35.041+01:00  INFO 3524 --- [jaxrs] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-03T17:05:35.575+01:00  INFO 3524 --- [jaxrs] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-03T17:05:35.625+01:00  INFO 3524 --- [jaxrs] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-03T17:05:35.931+01:00  INFO 3524 --- [jaxrs] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:banque user=SA
+2026-11-03T17:05:35.934+01:00  INFO 3524 --- [jaxrs] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-03T17:05:36.025+01:00  INFO 3524 --- [jaxrs] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-03T17:05:37.285+01:00  INFO 3524 --- [jaxrs] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-03T17:05:37.342+01:00  INFO 3524 --- [jaxrs] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-03T17:05:38.249+01:00  INFO 3524 --- [jaxrs] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:banque'
+2026-11-03T17:05:38.420+01:00  INFO 3524 --- [jaxrs] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59154 (http) with context path '/'
+2026-11-03T17:05:38.435+01:00  INFO 3524 --- [jaxrs] [           main] ma.ws.jaxrs.CompteApiTests               : Started CompteApiTests in 6.913 seconds (process running for 8.657)
+Compte(id=1, solde=5856.611045850744, dateCreation=2026-11-03, type=EPARGNE)
+Compte(id=2, solde=3348.1348774394683, dateCreation=2026-11-03, type=COURANT)
+Compte(id=3, solde=442.6185757534803, dateCreation=2026-11-03, type=EPARGNE)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-11-03T17:05:40.882+01:00  INFO 3524 --- [jaxrs] [o-auto-1-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03T17:05:40.882+01:00  INFO 3524 --- [jaxrs] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-03T17:05:40.884+01:00  INFO 3524 --- [jaxrs] [o-auto-1-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-03T17:05:41.168+01:00  INFO 3524 --- [jaxrs] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [ma.ws.jaxrs.JaxrsApplicationTests]: JaxrsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-03T17:05:41.172+01:00  INFO 3524 --- [jaxrs] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration ma.ws.jaxrs.JaxrsApplication for test class ma.ws.jaxrs.JaxrsApplicationTests
+2026-11-03T17:05:41.187+01:00  INFO 3524 --- [jaxrs] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-11-03T17:05:41.253+01:00  INFO 3524 --- [jaxrs] [           main] ma.ws.jaxrs.JaxrsApplicationTests        : Starting JaxrsApplicationTests using Java 25.0.4 with PID 3524 (started by ASUS in C:\Users\ASUS\Desktop\emsi2\MICROSERVICES\tp7\jaxrs)
+2026-11-03T17:05:41.254+01:00  INFO 3524 --- [jaxrs] [           main] ma.ws.jaxrs.JaxrsApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-11-03T17:05:41.652+01:00  INFO 3524 --- [jaxrs] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-03T17:05:41.671+01:00  INFO 3524 --- [jaxrs] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2026-11-03T17:05:41.816+01:00  INFO 3524 --- [jaxrs] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-03T17:05:41.835+01:00  INFO 3524 --- [jaxrs] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-03T17:05:41.869+01:00  INFO 3524 --- [jaxrs] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-03T17:05:41.873+01:00  INFO 3524 --- [jaxrs] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-03T17:05:41.874+01:00  INFO 3524 --- [jaxrs] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:banque user=SA
+2026-11-03T17:05:41.875+01:00  INFO 3524 --- [jaxrs] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-03T17:05:41.876+01:00  INFO 3524 --- [jaxrs] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-03T17:05:41.965+01:00  INFO 3524 --- [jaxrs] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-03T17:05:41.972+01:00  INFO 3524 --- [jaxrs] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-03T17:05:42.200+01:00  INFO 3524 --- [jaxrs] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:banque'
+2026-11-03T17:05:42.238+01:00  INFO 3524 --- [jaxrs] [           main] ma.ws.jaxrs.JaxrsApplicationTests        : Started JaxrsApplicationTests in 1.051 seconds (process running for 12.46)
+Compte(id=1, solde=6345.374582453943, dateCreation=2026-11-03, type=EPARGNE)
+Compte(id=2, solde=5790.680101772488, dateCreation=2026-11-03, type=COURANT)
+Compte(id=3, solde=8152.669356572755, dateCreation=2026-11-03, type=EPARGNE)

@@ -1,0 +1,83 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/C:/Users/ASUS/.m2/wrapper/dists/apache-maven-3.9.5-bin/2adeog8mj13csp1uusqnc1f2mo/apache-maven-3.9.5/lib/jansi-2.4.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/C:/Users/ASUS/.m2/wrapper/dists/apache-maven-3.9.5-bin/2adeog8mj13csp1uusqnc1f2mo/apache-maven-3.9.5/lib/guava-32.0.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+17:02:45.684 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [ma.ws.jaxrs.CompteApiTests]: CompteApiTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:02:45.962 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration ma.ws.jaxrs.JaxrsApplication for test class ma.ws.jaxrs.CompteApiTests
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.091 s <<< FAILURE! -- in ma.ws.jaxrs.CompteApiTests
+[ERROR] ma.ws.jaxrs.CompteApiTests.crudJsonEtXml -- Time elapsed: 0.019 s <<< ERROR!
+java.io.UncheckedIOException: java.io.IOException: Unable to establish loopback connection
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.<init>(HttpClientImpl.java:482)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.create(HttpClientImpl.java:420)
+	at java.net.http/jdk.internal.net.http.HttpClientBuilderImpl.build(HttpClientBuilderImpl.java:142)
+	at java.net.http/java.net.http.HttpClient.newHttpClient(HttpClient.java:197)
+	at ma.ws.jaxrs.CompteApiTests.<init>(CompteApiTests.java:13)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.io.IOException: Unable to establish loopback connection
+	at java.base/sun.nio.ch.PipeImpl$Initializer.init(PipeImpl.java:96)
+	at java.base/sun.nio.ch.PipeImpl.<init>(PipeImpl.java:186)
+	at java.base/sun.nio.ch.WEPollSelectorImpl.<init>(WEPollSelectorImpl.java:78)
+	at java.base/sun.nio.ch.WEPollSelectorProvider.openSelector(WEPollSelectorProvider.java:33)
+	at java.base/java.nio.channels.Selector.open(Selector.java:295)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.<init>(HttpClientImpl.java:1094)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.<init>(HttpClientImpl.java:479)
+	... 9 more
+Caused by: java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:546)
+	at java.base/sun.nio.ch.Net.connect(Net.java:553)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:952)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:281)
+	at java.base/sun.nio.ch.PipeImpl$Initializer$LoopbackConnector.run(PipeImpl.java:123)
+	at java.base/sun.nio.ch.PipeImpl$Initializer.init(PipeImpl.java:78)
+	... 15 more
+
+17:02:46.515 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [ma.ws.jaxrs.JaxrsApplicationTests]: JaxrsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:02:46.520 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration ma.ws.jaxrs.JaxrsApplication for test class ma.ws.jaxrs.JaxrsApplicationTests
+17:02:46.660 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-11-03T17:02:47.174+01:00  INFO 30580 --- [jaxrs] [           main] ma.ws.jaxrs.JaxrsApplicationTests        : Starting JaxrsApplicationTests using Java 25.0.4 with PID 30580 (started by ASUS in C:\Users\ASUS\Desktop\emsi2\MICROSERVICES\tp7\jaxrs)
+2026-11-03T17:02:47.177+01:00  INFO 30580 --- [jaxrs] [           main] ma.ws.jaxrs.JaxrsApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-11-03T17:02:48.397+01:00  INFO 30580 --- [jaxrs] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-03T17:02:48.507+01:00  INFO 30580 --- [jaxrs] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2026-11-03T17:02:49.410+01:00  INFO 30580 --- [jaxrs] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-03T17:02:49.563+01:00  INFO 30580 --- [jaxrs] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-11-03T17:02:49.654+01:00  INFO 30580 --- [jaxrs] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-03T17:02:50.269+01:00  INFO 30580 --- [jaxrs] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-03T17:02:50.317+01:00  INFO 30580 --- [jaxrs] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-03T17:02:50.599+01:00  INFO 30580 --- [jaxrs] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:banque user=SA
+2026-11-03T17:02:50.602+01:00  INFO 30580 --- [jaxrs] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-03T17:02:50.685+01:00  INFO 30580 --- [jaxrs] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-03T17:02:51.946+01:00  INFO 30580 --- [jaxrs] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-03T17:02:52.003+01:00  INFO 30580 --- [jaxrs] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-03T17:02:53.319+01:00  INFO 30580 --- [jaxrs] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:banque'
+2026-11-03T17:02:53.418+01:00  INFO 30580 --- [jaxrs] [           main] ma.ws.jaxrs.JaxrsApplicationTests        : Started JaxrsApplicationTests in 6.786 seconds (process running for 9.044)
+Compte(id=1, solde=4884.775856888107, dateCreation=2026-11-03, type=EPARGNE)
+Compte(id=2, solde=6560.733695186364, dateCreation=2026-11-03, type=COURANT)
+Compte(id=3, solde=272.69666751243307, dateCreation=2026-11-03, type=EPARGNE)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3

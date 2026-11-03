@@ -1,0 +1,46 @@
+### Liste JSON
+GET http://localhost:8082/banque/comptes
+Accept: application/json
+
+### Liste XML
+GET http://localhost:8082/banque/comptes
+Accept: application/xml
+
+### Détail
+GET http://localhost:8082/banque/comptes/1
+Accept: application/json
+
+### Création JSON
+POST http://localhost:8082/banque/comptes
+Content-Type: application/json
+Accept: application/json
+
+{"solde":1200,"dateCreation":"2026-11-03","type":"COURANT"}
+
+### Création XML
+POST http://localhost:8082/banque/comptes
+Content-Type: application/xml
+Accept: application/xml
+
+<compte><solde>3500</solde><dateCreation>2026-11-03</dateCreation><type>EPARGNE</type></compte>
+
+### Modification JSON
+PUT http://localhost:8082/banque/comptes/1
+Content-Type: application/json
+Accept: application/json
+
+{"solde":2500,"dateCreation":"2026-11-03","type":"EPARGNE"}
+
+### Modification XML
+PUT http://localhost:8082/banque/comptes/1
+Content-Type: application/xml
+Accept: application/xml
+
+<compte><solde>4200</solde><dateCreation>2026-11-03</dateCreation><type>COURANT</type></compte>
+
+### Suppression (utiliser l'ID créé)
+DELETE http://localhost:8082/banque/comptes/4
+
+### Compte inexistant
+GET http://localhost:8082/banque/comptes/999999
+Accept: application/json
